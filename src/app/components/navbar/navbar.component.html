@@ -1,0 +1,19 @@
+<img id="nav-toggler" src="../../../assets/navbar/toggler.png" alt="" (click)="NavToggler(navbar)">
+
+<div id="navbar" #navbar>
+    <div class="nav-logo-wrapper">
+        <img src="../../../assets/Logo.png" alt="">
+    </div>
+    <ul>
+        <li class="nav-items customUnderline" (click)="closenav(navbar)" ><a href="https://team.portugal4hacking.pt/">CTF TEAM</a></li>
+        <li class="nav-items customUnderline" (click)="closenav(navbar)"><a href="#toggle-faq">Toggle FAQ</a></li>
+        <li class="nav-items customUnderline" (click)="closenav(navbar)"><a href="#upcomming-events">Events</a></li>
+        <li class="nav-items customUnderline" (click)="closenav(navbar)"><a href="#partners">Partners</a></li>
+        <li class="nav-items customUnderline" (click)="closenav(navbar)"><a href="#our-team">Our Team</a></li>
+    </ul>
+    <div class="nav-icons-wraper d-flex align-items-center justify-content-evenly">
+        <a href="https://discord.com/invite/MTRCTnt" target="_blank"><img src="../../../assets/icons/discord-1-light.svg" alt=""></a>
+        <a (click)="sendEmail()"><img src="../../../assets/icons/email-1-light.svg" alt=""></a>
+        <a href="https://twitter.com/P4Hacking" target="_blank"><img src="../../../assets/icons/twitter-1-light.svg" alt=""></a>
+    </div>
+</div>

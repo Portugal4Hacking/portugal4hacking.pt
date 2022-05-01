@@ -1,0 +1,195 @@
+<header id="landing">
+    <h1>Bem Vindo</h1>
+    <p>Primeira comunidade de Hacking criada em Portugal.
+        Com o objetivo de juntar todos os entusiastas de Cybersecurity portugueses num lugar só.</p>
+
+    <img id="arrow-scroll" src="../../assets/landing/Scroll Arrow.png" alt="" (click)="arrscroll(arrowscroll)"
+        #arrowscroll>
+
+</header>
+
+<section id="toggle-faq">
+    <h2 (click)="runnerAnimation(runner)" style="cursor: pointer;">Toggle FAQ</h2>
+
+    <div class="cards-wrapper">
+        <div class="faq-card">
+            <h4>Quem Somos</h4>
+            <p>Portugal4hacking é uma comunidade que nasceu no dia 11/08/2020 com o objetivo principal de juntar todas
+                as pessoas que gostam de Tecnologia, Cybersecurity e Programação.</p>
+        </div>
+
+        <div class="faq-card">
+            <h4>
+                Aprender<br> Programação & Cybersecurity</h4>
+            <p>O objetivo principal da Comunidade independentemente do vosso nível de conhecimento na área é a vontade
+                de aprender algo novo e partilhar conhecimentos. </p>
+        </div>
+
+        <div class="faq-card">
+            <h4>O Nosso Objetivo</h4>
+            <p>O nosso objetivo é trazer Cybersecurity para Portugal e levar Portugal ao mundo de Cybersecurity. Com
+                isto vamos fazer eventos, palestras, CTF's e até criar Hacker's Spaces pelo pais. </p>
+        </div>
+
+    </div>
+
+    <img id="runner" src="../../../assets/run.gif" alt="" #runner>
+</section>
+
+
+<section id="upcomming-events">
+    <h2>UPCOMMING EVENTS</h2>
+
+    <swiper style="width: 45%;" [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [slidesPerView]="2"
+        [loop]="true" [coverflowEffect]="{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false
+            }" [pagination]="false" [breakpoints]="{
+                '@0.00': {
+                  slidesPerView: 1
+                },
+                '@0.75': {
+                  slidesPerView: 2
+                },
+                '@1.00': {
+                  slidesPerView: 2
+                },
+                '@1.50': {
+                  slidesPerView: 2
+                }
+              }" class="mySwiper">
+
+        <ng-template class="swiper-card" swiperSlide>
+            <img src="../../../assets/upcomming/comming-soon.png" />
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <img src="../../../assets/upcomming/comming-soon.png" />
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <img src="../../../assets/upcomming/comming-soon.png" />
+        </ng-template>
+
+
+    </swiper>
+</section>
+
+<section id="partners">
+    <h2>OFFICIAL PARTNERS</h2>
+
+    <div class="partners-wrapper">
+        <div class="partners-text">
+            <p>
+                Queres te tornar num dos nossos parceiros? No caso de seres streamer/youtuber ou dono uma marca e tenhas
+                interesse na nossa comunidade entra em contacto connosco, clicando no botão abaixo.
+                Ou em: <b>contacto@portugal4hacking.pt</b>.
+            </p>
+            <button id="contactar-button" (click)="copiarEnviar()">CONTACTAR</button>
+        </div>
+        <div class="partners-logo">
+            <img src="../../assets/partners/logo1.png" alt="">
+            <img src="../../assets/partners/logo 2.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="our-team">
+    <h2>OUR TEAM</h2>
+
+    <div class="team-cards-wrapper">
+        <p id="teamlabel"></p>
+        <div class="team-card" cdkDrag cdkDragBoundary=".team-cards-wrapper">
+            <p class="team-card-name">Diogo Dias</p>
+            <p class="team-card-badge">FOUNDER</p>
+
+            <div class="socials-wrapper">
+                <a href="https://twitter.com/DiasS3715" target="_blank"><img src="../../assets/ourteam/twitter.svg"
+                        alt=""></a>
+                <a href="https://github.com/portugal4Hacking" target="_blank"><img src="../../assets/ourteam/github.svg"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/in/diogodiass/" target="_blank"><img
+                        src="../../assets/ourteam/linkedin.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <p class="team-card-name">Zyeinn</p>
+            <p class="team-card-badge">STAFF</p>
+
+            <div class="socials-wrapper">
+                <a href="https://github.com/zyeinn" target="_blank"><img src="../../assets/ourteam/github.svg"
+                        alt=""></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <p class="team-card-name">Miguel Alves</p>
+            <p class="team-card-badge">STAFF</p>
+
+            <div class="socials-wrapper">
+                <a href="https://twitter.com/MiguelAlv3s" target="_blank"><img src="../../assets/ourteam/twitter.svg"
+                        alt=""></a>
+                <a href="https://github.com/MiguelAlves03" target="_blank"><img src="../../assets/ourteam/github.svg"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/in/miguel-alves-2875611b5/" target="_blank"><img
+                        src="../../assets/ourteam/linkedin.svg" alt=""></a>
+                <a href="https://www.twitch.tv/m1guelalves" target="_blank"><img src="../../assets/ourteam/twitch.svg"
+                        alt=""></a>
+            </div>
+        </div>
+
+
+        <div class="team-card">
+            <p class="team-card-name">Tiago Pascoal</p>
+            <p class="team-card-badge">STAFF</p>
+
+            <div class="socials-wrapper">
+                <a href="https://twitter.com/bs1phc" target="_blank"><img src="../../assets/ourteam/twitter.svg"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/in/pascoalcybersecurity/" target="_blank"><img
+                        src="../../assets/ourteam/linkedin.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <p class="team-card-name">Francisco Faria</p>
+            <p class="team-card-badge">MODERATOR</p>
+
+            <div class="socials-wrapper">
+                <a href="https://twitter.com/xicosec" target="_blank"><img src="../../assets/ourteam/twitter.svg"
+                        alt=""></a>
+            </div>
+        </div>
+
+
+        <div class="team-card">
+            <p class="team-card-name">Touklwez</p>
+            <p class="team-card-badge">WEB DEV</p>
+
+            <div class="socials-wrapper">
+                <a href="https://github.com/flav1o" target="_blank"><img src="../../assets/ourteam/github.svg"
+                        alt=""></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h1>FIND US</h1>
+    <div>
+        <img src="../../../assets/contact/discord.svg" alt=""
+            (click)="openNewTab('https://discord.com/invite/MTRCTnt')">
+        <img src="../../../assets/contact/twitter.svg" alt="" (click)="openNewTab('https://twitter.com/P4Hacking')">
+        <img src="../../../assets/contact/github.svg" alt=""
+            (click)="openNewTab('https://github.com/portugal4Hacking')">
+    </div>
+</section>
+
+<section id="footer">
+    <p id="footer-copyright"></p>
+</section>

@@ -1,4 +1,3 @@
-# portugal4hacking.pt
-This is Portugal4Hacking Website
+# Portugal4Hacking
 
-[![pages-build-deployment](https://github.com/Portugal4Hacking/portugal4hacking.pt/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Portugal4Hacking/portugal4hacking.pt/actions/workflows/pages/pages-build-deployment)
+Portugal4hacking.pt
